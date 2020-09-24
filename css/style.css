@@ -22,26 +22,19 @@ body{
 	font-family: 'AmbleRegular', sans-serif;
 }
 /*HEADER*/
-header{
-	display: flex;
-	justify-content: center;
-}
 .picture{
-	width: 33%;
 	height: 326px;
-	background-color: #0080FF;
 	text-align: center;
 }
 .picture img{
 	border-radius: 50%;
-	border: 4px solid rgba(0, 0, 0, 0.5);
+	border: 4px solid rgba(0, 0, 0, 0.3);
 	margin-top: 68px;
 }
 .identity{
 	width: 67%;
 	height: 209px;
 	padding: 117px 65px 0px 65px;
-	background-color: white;
 }
 h1{
 	color: #0080FF;
@@ -64,9 +57,8 @@ h2{
 }
 /*LEFT*/
 aside{
-	width: 33%;
+	width: 25%;
 	background-color: #0080FF;
-	text-align: center;
 	position: relative;
 }
 h3{
@@ -74,7 +66,7 @@ h3{
 	text-transform: uppercase;
 }
 .contact h3{
-	font-size: 20px;
+	font-size: 25px;
 	background-color: black;
 	color: #0080FF;
 	text-align: center;
@@ -121,11 +113,11 @@ h3{
 }
 /*RIGHT*/
 .block-title{
-	height: 50px;
-	text-transform: uppercase;
-	border-bottom: 2px #0080FF solid;
 	display: flex;
-	flex-direction: row;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-bottom: 2px #0080FF solid;
 	align-items: baseline;
 }
 header i{
@@ -138,21 +130,24 @@ header i{
 	color:#0080FF;
 	margin-right: 18px;
 	font-size: 30px;
+	transform:scaleX(+1);
 }
 .block-history{
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 }
 .block-history-left{
 	display: flex;
 	flex-direction: row;
-  	align-items: baseline;
+	align-items: baseline;
+	margin-left: 5%;
 }
 .block-history-right{
-	width:67%;
-	padding-left: 20px;
-	text-align: justify;
+	width:76%;  
+}
+
+.block-history-right p{
+	margin-right: 15%;  
 }
 .block-history i{
 	color:#0080FF;
@@ -210,7 +205,8 @@ h2{
 .container{
     flex-direction: column;
     width: auto;
-    margin: auto;
+	margin: auto;
+	margin-right: 5%;
 }
 aside{
     width: auto;
