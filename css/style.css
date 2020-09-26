@@ -1,72 +1,93 @@
 /*FONTS*/
-@font-face{
+@font-face{ 
 	font-family: 'AmbleRegular';
 	font-style: normal;
 	font-weight: normal;
 	src: url('fonts/Amble-Regular.woff') format('woff');
 } 
-@font-face{
+@font-face {
 	font-family: 'AmbleBold';
 	font-style: normal;
 	font-weight: normal;
 	src: url('fonts/Amble-Bold.woff') format('woff');
 }
-@font-face{
+@font-face {
 	font-family: 'AmbleLight';
 	font-style: normal;
 	font-weight: normal;
 	src: url('fonts/Amble-Light.woff') format('woff');
 }
+
 /*BODY*/
-body{
+body {
 	font-family: 'AmbleRegular', sans-serif;
+	background-color: white;
+	margin: 0 auto 0 auto;
 }
+
 /*HEADER*/
-.picture{
+header {
+	width: 1200px;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.picture {
+	width: 33%;
 	height: 326px;
+	background-color: #0080FF;
 	text-align: center;
 }
-.picture img{
+
+.picture img {
 	border-radius: 50%;
-	border: 4px solid rgba(0, 0, 0, 0.3);
+	border: 4px solid rgba(0, 0, 0, 0.5);
 	margin-top: 68px;
 }
-.identity{
+
+.identity {
 	width: 67%;
 	height: 209px;
 	padding: 117px 65px 0px 65px;
+	background-color: white;
 }
-h1{
+
+h1 {
 	color: #0080FF;
 	font-size: 44px;
 }
-.name{
+
+.name {
 	color: black;
 	font-weight: lighter;
 }
-h2{
+
+h2 {
 	font-size: 20px;
 }
-.underline{
+
+.underline {
 	border-bottom: 2px #0080FF solid;
 }
+
 /*CONTAINER*/
-.container{
+.container {
+	width:1200px;
 	display: flex;
-	flex-direction: row-reverse;
+    justify-content: center;
+    margin: auto;
 }
+
 /*LEFT*/
-aside{
-	width: 25%;
+aside {
+	width: 33%;
 	background-color: #0080FF;
+	text-align: center;
 	position: relative;
 }
-h3{
-	font-size: 20px;
-	text-transform: uppercase;
-}
-.contact h3{
-	font-size: 25px;
+
+.title {
 	background-color: black;
 	color: #0080FF;
 	text-align: center;
@@ -74,189 +95,203 @@ h3{
 	text-transform: uppercase;
     flex-direction: column;
 }
-.contact, .about-me{
+
+h3{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.contact, .about-me {
 	flex-direction: column;
 }
-.contact p{
+
+.contact p {
 	text-align: left;
 	margin: 5%;
 }
-.contact a, a:visited{
+
+.contact a, a:visited {
 	color:black;
 	text-decoration: none;
 }
-.about-me p{
+
+.about-me p {
 	text-align: justify;
 	margin: 5%;
 }
-.hobbies{
+
+.hobbies {
 	position: absolute;
 	bottom:0;
 	width: 100%;
 }
-.icons{
+
+.icons {
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
-.icons i{
-	margin-right: 0px;
-    width: 45px;
-    height: 45px;
-    font-size: 30px;
-    border: 2px solid black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: space-around;
-	align-items: center;
-}
+
 /*RIGHT*/
-.block-title{
+article {
+	width: 67%;
+	padding: 0 65px 65px 65px;
+	background-color: white;
 	display: flex;
-	margin-top: 5%;
-	margin-left: 5%;
-	margin-right: 5%;
+	flex-direction: column;
+}
+
+.block-title {
+	height: 50px;
+	text-transform: uppercase;
 	border-bottom: 2px #0080FF solid;
-	align-items: baseline;
-}
-header i{
-	color:#0080FF;
-	margin-right: 18px;
-	font-size: 30px;
-	transform:scaleX(-1);
-}
-.recommendations i{
-	color:#0080FF;
-	margin-right: 18px;
-	font-size: 30px;
-	transform:scaleX(+1);
-}
-.block-history{
-	display: flex;
-	justify-content: space-between;
-}
-.block-history-left{
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
-	margin-left: 5%;
-}
-.block-history-right{
-	width:76%;  
 }
 
-.block-history-right p{
-	margin-right: 15%;  
+.education, .block-history {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
-.block-history i{
-	color:#0080FF;
-	font-size: 20px;
-	margin-right: 18px;
+
+.block-history-left {
+	display: flex;
+	flex-direction: row;
+  	align-items: baseline;
 }
-.recommendations-block{
+
+.block-history-right {
+	padding-left: 20px;
+	width:67%;
+	text-align: justify;
+}
+
+.recommendations-block {
 	display: flex;
 	justify-content: space-around;
 }
-.recommendations-block a{
+
+.recommendations-block a {
     color: black;
     text-decoration: none;
 }
-.dot-circle{
+
+.dot-circle {
 	color: #0080FF;
 	font-size: 20px;
 	margin-right: 18px;
 }
-.circle{
+
+.circle {
 	color: #0080FF;
 	font-size: 15px;
 	margin-right: 23px;
 }
-/*RESPONSIVE RULES
-@media all and (max-width: 900px)
+
+
+RESPONSIVE RULES
+/*@media all and (max-width: 900px)
 {
-body{
-	margin: 0;
-}
-header{
-    width: auto;
-    margin: auto;
-    flex-direction: column;
-}
-h2{
-    height: auto;
-}
-.picture:nth-child(1){
-    order: 2;
-	width: auto;
-	height: auto;
-	padding: 10px;
-}  
-.picture img{
-	margin-top: 10px;
-}
-.name:nth-child(2){
-    order: 1;
-    width: auto;
-    margin: 0;
-    padding: 10px 0 15px 0;
-    text-align: center;
-}
-.container{
-    flex-direction: column;
-    width: auto;
-	margin: auto;
-	margin-right: 5%;
-}
-aside{
-    width: auto;
-    margin: auto;
-}
-.about-me, .contact, .hobbies{
-    padding: 30px;
-}
-.contact p{
-    text-align: center;
-}  
-#hobbies{
-	position: relative;
-}
-main{
-	width: auto;
-	height:auto;
-    margin: auto;
-    padding: 15px;
-  }
-.title{
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
-    padding-bottom: 0px;
-}
-.block-title{
-	justify-content: center;
-}
-.education, .block-history{
-    flex-direction: column;
-	justify-content: space-between;
-}
-.block-history-right, .block-history-left{
-	width: auto;
-	padding: 0 15px;
-}
-.recommendations-block{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+	body{
+		margin: 0;
+	}
+	header{
+		width: auto;
+		margin: auto;
+		flex-direction: column;
+	}
+	h2{
+		height: auto;
+	}
+	.picture:nth-child(1){
+		order: 2;
+		width: auto;
+		height: auto;
+		padding: 10px;
+	}  
+	.picture img{
+		margin-top: 10px;
+	}
+	.name:nth-child(2){
+		order: 1;
+		width: auto;
+		margin: 0;
+		padding: 10px 0 15px 0;
+		text-align: center;
+	}
+	.container{
+		flex-direction: column;
+		width: auto;
+		margin: auto;
+	}
+	aside{
+		width: auto;
+		margin: auto;
+	}
+	.about-me, .contact, .hobbies{
+		padding: 30px;
+	}
+	.contact p{
+		text-align: center;
+	}  
+	#hobbies{
+		position: relative;
+	}
+	article{
+		width: auto;
+		height:auto;
+		margin: auto;
+		padding: 15px;
+	}
+	.title{
+		height: auto;
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		justify-content: center;
+		padding-bottom: 0px;
+	}
+	.block-title{
+		justify-content: center;
+	}
+	.education, .block-history{
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.block-history-right, .block-history-left{
+		width: auto;
+		padding: 0 15px;
+	}
+	.recommendations-block{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.identity{
+		width: 100%;
+	}
+	.hobbies{
+		position: relative;
+		width: auto;
+		bottom: auto;
+	}
 }
 @media all and (max-width: 500px){
-.block-title h2{
-	font-size: 19px;
-}
- .icons{
-	display: none;
-}	
+	.block-title h2{
+		font-size: 19px;
+	}
+	.icons{
+		display: none;
+	}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  
+	{
+	
+	}
+@media only screen and (max-device-width: 480px)
+	{
+
+	}
 }*/
