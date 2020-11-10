@@ -10,18 +10,17 @@ Construction de la partie HTML :
 <br>
 <ul>
   <li>
-    • Balises sémantiques, div, id, class, header, etc.),
+    Balises sémantiques, div, id, class, header, etc.),
     <br>
-    • Choix du format des images (png, jpeg, etc.),
+    Choix du format des images (png, jpeg, etc.),
     <br>
-    • Choix des couleurs (calibrage couleurs icc ?),
+    Choix des couleurs (calibrage couleurs icc ?),
     <br>
-    • Utilisation des icônes Font-Awesome,
+    Utilisation des icônes Font-Awesome,
     <br>
-    • Polices hébergées directement sur le projet.
+    Polices hébergées directement sur le projet.
   </li>
-  </ul>
-    <br>
+ </ul>
 Validation W3C ;
 <br>
 Construction du code CSS en Desktop First (utilisation de Flexbox) ;
