@@ -11,13 +11,9 @@ Construction de la partie HTML :
 <ul>
   <li>
     Balises sémantiques, div, id, class, header, etc.),
-    <br>
     Choix du format des images (png, jpeg, etc.),
-    <br>
     Choix des couleurs (calibrage couleurs icc ?),
-    <br>
     Utilisation des icônes Font-Awesome,
-    <br>
     Polices hébergées directement sur le projet.
   </li>
  </ul>
